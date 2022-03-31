@@ -72,6 +72,23 @@ export const networkConfigs = {
     },
     providers: [{ id: 'provided' }, { id: 'frame' }],
   },
+  kiln: {
+    addresses: {
+      ensRegistry:
+        localEnsRegistryAddress || '0xD3A23B83902066baC61e82bCe449fE1d3154Ab5D',
+    },
+    nodes: {
+      defaultEth: 'ws://34.159.167.0:8546',
+    },
+    settings: {
+      chainId: 1337802,
+      name: 'Kiln Testnet',
+      shortName: 'Kiln',
+      type: 'private',
+      live: true,
+    },
+    providers: [{ id: 'provided' }, { id: 'frame' }],
+  },
   local: {
     addresses: {
       ensRegistry: localEnsRegistryAddress,
